@@ -15,18 +15,18 @@ const ComingSoon = () => {
 
   // Countdown logic
   useEffect(() => {
-    const targetDate = new Date();
-    targetDate.setDate(targetDate.getDate() + 15);
-
+    const targetDate = new Date('2025-04-30T00:00:00');
+  
     const interval = setInterval(() => {
       const now = new Date().getTime();
       const distance = targetDate.getTime() - now;
-
+  
       if (distance <= 0) {
         clearInterval(interval);
+        setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
         return;
       }
-
+  
       setTimeLeft({
         days: Math.floor(distance / (1000 * 60 * 60 * 24)),
         hours: Math.floor((distance / (1000 * 60 * 60)) % 24),
@@ -34,9 +34,10 @@ const ComingSoon = () => {
         seconds: Math.floor((distance / 1000) % 60),
       });
     }, 1000);
-
+  
     return () => clearInterval(interval);
   }, []);
+  
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
