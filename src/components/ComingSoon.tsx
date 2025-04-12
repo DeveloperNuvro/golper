@@ -130,7 +130,7 @@ const ComingSoon = () => {
 
         {/* Golper Box Description */}
         <div className="bg-white/10 backdrop-blur-lg rounded-xl p-5 text-left text-sm sm:text-base leading-relaxed text-white space-y-4 mt-8">
-          <h2 className="text-xl sm:text-2xl font-bold text-center">🌟 গোলপের বক্স কী?</h2>
+          <h2 className="text-xl sm:text-2xl font-bold text-center">🌟 গল্পের বক্স কী?</h2>
           <p>
             Golper Box মানে হলো প্রতি মাসে একটি সারপ্রাইজে ভরা উপহারের বাক্স — যেখানে থাকে আনন্দ, আবিষ্কার, আর গল্প! 🎁✨
           </p>
