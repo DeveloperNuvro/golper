@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import toast, { Toaster } from 'react-hot-toast';
 import { FaFacebookF, FaInstagram } from 'react-icons/fa';
+import logo from '../assets/logo.png'; 
 
 const ComingSoon = () => {
   const [email, setEmail] = useState('');
@@ -81,7 +82,7 @@ const ComingSoon = () => {
       <div className="relative z-10 max-w-xl w-full text-center space-y-8">
         {/* Logo with hover effect and shadow */}
         <img
-          src="/src/assets/logo.png"
+          src={logo}
           alt="Golper Box"
           className="mx-auto w-40 drop-shadow-xl transition-transform transform hover:scale-110 hover:brightness-110 duration-300"
         />
