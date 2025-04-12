@@ -73,7 +73,7 @@ const ComingSoon = () => {
   };
 
   return (
-    <div className="bg-gradient-to-br from-[#0078a3] via-[#004f68] to-[#002f40] min-h-screen flex items-center justify-center text-white px-4 relative overflow-hidden">
+    <div className="bg-gradient-to-br from-[#0078a3] py-10 px-5 via-[#004f68] to-[#002f40] min-h-screen flex items-center justify-center text-white px-4 relative overflow-hidden">
       <Toaster />
 
       {/* Soft confetti background dots */}
